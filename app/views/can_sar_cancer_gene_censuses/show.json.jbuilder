@@ -1,0 +1,1 @@
+json.partial! "can_sar_cancer_gene_censuses/can_sar_cancer_gene_censuse", can_sar_cancer_gene_censuse: @can_sar_cancer_gene_censuse

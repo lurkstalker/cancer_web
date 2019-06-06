@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+#app/views/cocktails/index.html.erb
+<%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline' } do |f| %>
+  <%= f.input :name, input_html: {value: ""} %>
+  <%= f.submit "Search", class: "btn btn-primary" %>
+<% end %>
+
+<h1>Can Sar Cancer Gene Censuses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene symbol</th>
+      <th>Gene name</th>
+      <th>Entrez gene id</th>
+      <th>Genome location</th>
+      <th>Tier</th>
+      <th>Hallmark</th>
+      <th>Chr band</th>
+      <th>Somatic</th>
+      <th>Gemline</th>
+      <th>Tumor types somatic</th>
+      <th>Tumor types germline</th>
+      <th>Cancer syndrome</th>
+      <th>Tissue types</th>
+      <th>Molecular genetics</th>
+      <th>Role in cancer</th>
+      <th>Mutation types</th>
+      <th>Translocation partner</th>
+      <th>Other germline mut</th>
+      <th>Other syndrome</th>
+      <th>Synonyms</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @can_sar_cancer_gene_censuses.each do |can_sar_cancer_gene_censuse| %>
+      <tr>
+        <td><%= can_sar_cancer_gene_censuse.gene_symbol %></td>
+        <td><%= can_sar_cancer_gene_censuse.gene_name %></td>
+        <td><%= can_sar_cancer_gene_censuse.entrez_gene_Id %></td>
+        <td><%= can_sar_cancer_gene_censuse.genome_location %></td>
+        <td><%= can_sar_cancer_gene_censuse.tier %></td>
+        <td><%= can_sar_cancer_gene_censuse.hallmark %></td>
+        <td><%= can_sar_cancer_gene_censuse.chr_band %></td>
+        <td><%= can_sar_cancer_gene_censuse.somatic %></td>
+        <td><%= can_sar_cancer_gene_censuse.gemline %></td>
+        <td><%= can_sar_cancer_gene_censuse.tumor_types_somatic %></td>
+        <td><%= can_sar_cancer_gene_censuse.tumor_types_germline %></td>
+        <td><%= can_sar_cancer_gene_censuse.cancer_syndrome %></td>
+        <td><%= can_sar_cancer_gene_censuse.tissue_types %></td>
+        <td><%= can_sar_cancer_gene_censuse.molecular_genetics %></td>
+        <td><%= can_sar_cancer_gene_censuse.role_in_cancer %></td>
+        <td><%= can_sar_cancer_gene_censuse.mutation_types %></td>
+        <td><%= can_sar_cancer_gene_censuse.translocation_partner %></td>
+        <td><%= can_sar_cancer_gene_censuse.other_germline_mut %></td>
+        <td><%= can_sar_cancer_gene_censuse.other_syndrome %></td>
+        <td><%= can_sar_cancer_gene_censuse.synonyms %></td>
+        <td><%= link_to 'Show', can_sar_cancer_gene_censuse %></td>
+        <td><%= link_to 'Edit', edit_can_sar_cancer_gene_censuse_path(can_sar_cancer_gene_censuse) %></td>
+        <td><%= link_to 'Destroy', can_sar_cancer_gene_censuse, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Can Sar Cancer Gene Censuse', new_can_sar_cancer_gene_censuse_path %>

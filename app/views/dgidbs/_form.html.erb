@@ -1,0 +1,28 @@
+
+<%= simple_form_for(@dgidb) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :gene_name %>
+    <%= f.association :gene_hgnc %>
+    <%= f.input :hgnc_complete_set_name %>
+    <%= f.association :ensembl_gene %>
+    <%= f.input :ref_seq_accession %>
+    <%= f.input :gene_claim_name %>
+    <%= f.association :entrez_gene %>
+    <%= f.input :interation_claim_source %>
+    <%= f.input :interation_types %>
+    <%= f.input :drug_claim_name %>
+    <%= f.input :drug_claim_primary_name %>
+    <%= f.input :drug_name %>
+    <%= f.association :drug_chembl %>
+    <%= f.association :pubmed %>
+    <%= f.association :drug_bank %>
+    <%= f.input :drug_bank_name %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

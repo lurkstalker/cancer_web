@@ -1,0 +1,2 @@
+module DgidbsHelper
+end

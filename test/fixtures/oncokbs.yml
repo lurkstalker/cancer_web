@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  isoform: MyString
+  ref_seq: MyString
+  entrez_gene: one
+  gene_name: MyString
+  alteration: MyString
+  cancer_type: MyString
+  level_type: MyString
+  oncokb_drugs: MyString
+  pmid: MyString
+  abstracts_drugs: MyString
+  drug_bank_name: MyString
+  drug_bank: one
+  icd_10_codes: MyString
+
+two:
+  isoform: MyString
+  ref_seq: MyString
+  entrez_gene: two
+  gene_name: MyString
+  alteration: MyString
+  cancer_type: MyString
+  level_type: MyString
+  oncokb_drugs: MyString
+  pmid: MyString
+  abstracts_drugs: MyString
+  drug_bank_name: MyString
+  drug_bank: two
+  icd_10_codes: MyString

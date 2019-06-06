@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Dgidbs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>Gene hgnc</th>
+      <th>Hgnc complete set name</th>
+      <th>Ensembl gene</th>
+      <th>Ref seq accession</th>
+      <th>Gene claim name</th>
+      <th>Entrez gene</th>
+      <th>Interation claim source</th>
+      <th>Interation types</th>
+      <th>Drug claim name</th>
+      <th>Drug claim primary name</th>
+      <th>Drug name</th>
+      <th>Drug chembl</th>
+      <th>Pubmed</th>
+      <th>Drug bank</th>
+      <th>Drug bank name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dgidbs.each do |dgidb| %>
+      <tr>
+        <td><%= dgidb.gene_name %></td>
+        <td><%= dgidb.gene_hgnc_id %></td>
+        <td><%= dgidb.hgnc_complete_set_name %></td>
+        <td><%= dgidb.ensembl_gene_id %></td>
+        <td><%= dgidb.ref_seq_accession %></td>
+        <td><%= dgidb.gene_claim_name %></td>
+        <td><%= dgidb.entrez_gene_id %></td>
+        <td><%= dgidb.interation_claim_source %></td>
+        <td><%= dgidb.interation_types %></td>
+        <td><%= dgidb.drug_claim_name %></td>
+        <td><%= dgidb.drug_claim_primary_name %></td>
+        <td><%= dgidb.drug_name %></td>
+        <td><%= dgidb.drug_chembl_id %></td>
+        <td><%= dgidb.pubmed_id %></td>
+        <td><%= dgidb.drug_bank_id %></td>
+        <td><%= dgidb.drug_bank_name %></td>
+        <td><%= link_to 'Show', dgidb %></td>
+        <td><%= link_to 'Edit', edit_dgidb_path(dgidb) %></td>
+        <td><%= link_to 'Destroy', dgidb, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dgidb', new_dgidb_path %>

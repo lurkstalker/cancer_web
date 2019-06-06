@@ -1,0 +1,25 @@
+
+<%= simple_form_for(@oncokb) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :isoform %>
+    <%= f.input :ref_seq %>
+    <%= f.association :entrez_gene %>
+    <%= f.input :gene_name %>
+    <%= f.input :alteration %>
+    <%= f.input :cancer_type %>
+    <%= f.input :level_type %>
+    <%= f.input :oncokb_drugs %>
+    <%= f.input :pmid %>
+    <%= f.input :abstracts_drugs %>
+    <%= f.input :drug_bank_name %>
+    <%= f.association :drug_bank %>
+    <%= f.input :icd_10_codes %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

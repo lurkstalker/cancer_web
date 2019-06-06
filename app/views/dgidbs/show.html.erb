@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gene name:</strong>
+  <%= @dgidb.gene_name %>
+</p>
+
+<p>
+  <strong>Gene hgnc:</strong>
+  <%= @dgidb.gene_hgnc %>
+</p>
+
+<p>
+  <strong>Hgnc complete set name:</strong>
+  <%= @dgidb.hgnc_complete_set_name %>
+</p>
+
+<p>
+  <strong>Ensembl gene:</strong>
+  <%= @dgidb.ensembl_gene %>
+</p>
+
+<p>
+  <strong>Ref seq accession:</strong>
+  <%= @dgidb.ref_seq_accession %>
+</p>
+
+<p>
+  <strong>Gene claim name:</strong>
+  <%= @dgidb.gene_claim_name %>
+</p>
+
+<p>
+  <strong>Entrez gene:</strong>
+  <%= @dgidb.entrez_gene %>
+</p>
+
+<p>
+  <strong>Interation claim source:</strong>
+  <%= @dgidb.interation_claim_source %>
+</p>
+
+<p>
+  <strong>Interation types:</strong>
+  <%= @dgidb.interation_types %>
+</p>
+
+<p>
+  <strong>Drug claim name:</strong>
+  <%= @dgidb.drug_claim_name %>
+</p>
+
+<p>
+  <strong>Drug claim primary name:</strong>
+  <%= @dgidb.drug_claim_primary_name %>
+</p>
+
+<p>
+  <strong>Drug name:</strong>
+  <%= @dgidb.drug_name %>
+</p>
+
+<p>
+  <strong>Drug chembl:</strong>
+  <%= @dgidb.drug_chembl %>
+</p>
+
+<p>
+  <strong>Pubmed:</strong>
+  <%= @dgidb.pubmed %>
+</p>
+
+<p>
+  <strong>Drug bank:</strong>
+  <%= @dgidb.drug_bank %>
+</p>
+
+<p>
+  <strong>Drug bank name:</strong>
+  <%= @dgidb.drug_bank_name %>
+</p>
+
+<%= link_to 'Edit', edit_dgidb_path(@dgidb) %> |
+<%= link_to 'Back', dgidbs_path %>

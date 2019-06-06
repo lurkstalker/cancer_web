@@ -1,0 +1,32 @@
+
+<%= simple_form_for(@can_sar_cancer_gene_censuse) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :gene_symbol %>
+    <%= f.input :gene_name %>
+    <%= f.input :entrez_gene_Id %>
+    <%= f.input :genome_location %>
+    <%= f.input :tier %>
+    <%= f.input :hallmark %>
+    <%= f.input :chr_band %>
+    <%= f.input :somatic %>
+    <%= f.input :gemline %>
+    <%= f.input :tumor_types_somatic %>
+    <%= f.input :tumor_types_germline %>
+    <%= f.input :cancer_syndrome %>
+    <%= f.input :tissue_types %>
+    <%= f.input :molecular_genetics %>
+    <%= f.input :role_in_cancer %>
+    <%= f.input :mutation_types %>
+    <%= f.input :translocation_partner %>
+    <%= f.input :other_germline_mut %>
+    <%= f.input :other_syndrome %>
+    <%= f.input :synonyms %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

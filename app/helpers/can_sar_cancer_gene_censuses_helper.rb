@@ -1,0 +1,2 @@
+module CanSarCancerGeneCensusesHelper
+end

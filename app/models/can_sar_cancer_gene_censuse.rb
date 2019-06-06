@@ -1,0 +1,2 @@
+class CanSarCancerGeneCensuse < ApplicationRecord
+end

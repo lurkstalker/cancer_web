@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Isoform:</strong>
+  <%= @oncokb.isoform %>
+</p>
+
+<p>
+  <strong>Ref seq:</strong>
+  <%= @oncokb.ref_seq %>
+</p>
+
+<p>
+  <strong>Entrez gene:</strong>
+  <%= @oncokb.entrez_gene %>
+</p>
+
+<p>
+  <strong>Gene name:</strong>
+  <%= @oncokb.gene_name %>
+</p>
+
+<p>
+  <strong>Alteration:</strong>
+  <%= @oncokb.alteration %>
+</p>
+
+<p>
+  <strong>Cancer type:</strong>
+  <%= @oncokb.cancer_type %>
+</p>
+
+<p>
+  <strong>Level type:</strong>
+  <%= @oncokb.level_type %>
+</p>
+
+<p>
+  <strong>Oncokb drugs:</strong>
+  <%= @oncokb.oncokb_drugs %>
+</p>
+
+<p>
+  <strong>Pmid:</strong>
+  <%= @oncokb.pmid %>
+</p>
+
+<p>
+  <strong>Abstracts drugs:</strong>
+  <%= @oncokb.abstracts_drugs %>
+</p>
+
+<p>
+  <strong>Drug bank name:</strong>
+  <%= @oncokb.drug_bank_name %>
+</p>
+
+<p>
+  <strong>Drug bank:</strong>
+  <%= @oncokb.drug_bank %>
+</p>
+
+<p>
+  <strong>Icd 10 codes:</strong>
+  <%= @oncokb.icd_10_codes %>
+</p>
+
+<%= link_to 'Edit', edit_oncokb_path(@oncokb) %> |
+<%= link_to 'Back', oncokbs_path %>

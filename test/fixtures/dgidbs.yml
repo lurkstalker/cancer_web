@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gene_name: MyString
+  gene_hgnc: one
+  hgnc_complete_set_name: MyString
+  ensembl_gene: one
+  ref_seq_accession: MyString
+  gene_claim_name: MyString
+  entrez_gene: one
+  interation_claim_source: MyString
+  interation_types: MyString
+  drug_claim_name: MyString
+  drug_claim_primary_name: MyString
+  drug_name: MyString
+  drug_chembl: one
+  pubmed: one
+  drug_bank: one
+  drug_bank_name: MyString
+
+two:
+  gene_name: MyString
+  gene_hgnc: two
+  hgnc_complete_set_name: MyString
+  ensembl_gene: two
+  ref_seq_accession: MyString
+  gene_claim_name: MyString
+  entrez_gene: two
+  interation_claim_source: MyString
+  interation_types: MyString
+  drug_claim_name: MyString
+  drug_claim_primary_name: MyString
+  drug_name: MyString
+  drug_chembl: two
+  pubmed: two
+  drug_bank: two
+  drug_bank_name: MyString
