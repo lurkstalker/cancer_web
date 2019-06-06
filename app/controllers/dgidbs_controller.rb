@@ -4,7 +4,7 @@ class DgidbsController < ApplicationController
   # GET /dgidbs
   # GET /dgidbs.json
   def index
-    @dgidbs = Dgidb.first
+    @dgidbs = Dgidb.limit(100)
   end
 
   # GET /dgidbs/1
