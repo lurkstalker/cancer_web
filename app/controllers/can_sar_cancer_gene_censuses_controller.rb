@@ -4,7 +4,6 @@ class CanSarCancerGeneCensusesController < ApplicationController
   # GET /can_sar_cancer_gene_censuses
   # GET /can_sar_cancer_gene_censuses.json
   def index
-    debugger
     @can_sar_cancer_gene_censuses = CanSarCancerGeneCensuse.all
   end
 

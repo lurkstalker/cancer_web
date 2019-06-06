@@ -1,0 +1,2 @@
+class Mycanergenome < ApplicationRecord
+end

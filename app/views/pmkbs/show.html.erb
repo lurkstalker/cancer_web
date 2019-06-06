@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gene symbol:</strong>
+  <%= @pmkb.gene_symbol %>
+</p>
+
+<p>
+  <strong>Gene hgnc:</strong>
+  <%= @pmkb.gene_hgnc %>
+</p>
+
+<p>
+  <strong>Entrez gene:</strong>
+  <%= @pmkb.entrez_gene %>
+</p>
+
+<p>
+  <strong>Ref seq accession:</strong>
+  <%= @pmkb.ref_seq_accession %>
+</p>
+
+<p>
+  <strong>Tumor types:</strong>
+  <%= @pmkb.tumor_types %>
+</p>
+
+<p>
+  <strong>Tissue types:</strong>
+  <%= @pmkb.tissue_types %>
+</p>
+
+<p>
+  <strong>Variants:</strong>
+  <%= @pmkb.variants %>
+</p>
+
+<p>
+  <strong>Tier:</strong>
+  <%= @pmkb.tier %>
+</p>
+
+<p>
+  <strong>Intepretations:</strong>
+  <%= @pmkb.intepretations %>
+</p>
+
+<%= link_to 'Edit', edit_pmkb_path(@pmkb) %> |
+<%= link_to 'Back', pmkbs_path %>

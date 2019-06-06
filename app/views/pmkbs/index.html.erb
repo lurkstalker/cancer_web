@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pmkbs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene symbol</th>
+      <th>Gene hgnc</th>
+      <th>Entrez gene</th>
+      <th>Ref seq accession</th>
+      <th>Tumor types</th>
+      <th>Tissue types</th>
+      <th>Variants</th>
+      <th>Tier</th>
+      <th>Intepretations</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pmkbs.each do |pmkb| %>
+      <tr>
+        <td><%= pmkb.gene_symbol %></td>
+        <td><%= pmkb.gene_hgnc_id %></td>
+        <td><%= pmkb.entrez_gene_id %></td>
+        <td><%= pmkb.ref_seq_accession %></td>
+        <td><%= pmkb.tumor_types %></td>
+        <td><%= pmkb.tissue_types %></td>
+        <td><%= pmkb.variants %></td>
+        <td><%= pmkb.tier %></td>
+        <td><%= pmkb.intepretations %></td>
+<!--        <td><%#= link_to 'Show', pmkb %></td>-->
+<!--        <td><%#= link_to 'Edit', edit_pmkb_path(pmkb) %></td>-->
+<!--        <td><%#= link_to 'Destroy', pmkb, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pmkb', new_pmkb_path %>

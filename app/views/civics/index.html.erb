@@ -1,0 +1,112 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Civics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene symbol copy</th>
+      <th>Gene symbol</th>
+      <th>Gene hgnc</th>
+      <th>Ensembl gene</th>
+      <th>Ref seq accession</th>
+      <th>Entrez gene</th>
+      <th>Variants</th>
+      <th>Disease</th>
+      <th>Do</th>
+      <th>Phenotypes</th>
+      <th>Drugs</th>
+      <th>Evidence type</th>
+      <th>Evidence direction</th>
+      <th>Evidence level</th>
+      <th>Clinical significance</th>
+      <th>Evidence statement</th>
+      <th>Pubmed</th>
+      <th>Citation</th>
+      <th>Nct ids</th>
+      <th>Rating</th>
+      <th>Evidence status</th>
+      <th>Evidence</th>
+      <th>Variant</th>
+      <th>Gene</th>
+      <th>Chromosome</th>
+      <th>Start position</th>
+      <th>Stop position</th>
+      <th>Reference bases</th>
+      <th>Variant bases</th>
+      <th>Representative transcript</th>
+      <th>Chromosome2</th>
+      <th>Start position2</th>
+      <th>Stop position2</th>
+      <th>Representative transcript2</th>
+      <th>Ensembl version</th>
+      <th>Reference build</th>
+      <th>Variant summary</th>
+      <th>Variant origin</th>
+      <th>Last review date</th>
+      <th>Evidence civic url</th>
+      <th>Variant civic url</th>
+      <th>Gene civic url</th>
+      <th>Drug bank name</th>
+      <th>Drug bank</th>
+      <th>Icd 10 codes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @civics.each do |civic| %>
+      <tr>
+        <td><%= civic.gene_symbol_copy %></td>
+        <td><%= civic.gene_symbol %></td>
+        <td><%= civic.gene_hgnc_id %></td>
+        <td><%= civic.ensembl_gene_id %></td>
+        <td><%= civic.ref_seq_accession %></td>
+        <td><%= civic.entrez_gene_id %></td>
+        <td><%= civic.variants %></td>
+        <td><%= civic.disease %></td>
+        <td><%= civic.do_id %></td>
+        <td><%= civic.phenotypes %></td>
+        <td><%= civic.drugs %></td>
+        <td><%= civic.evidence_type %></td>
+        <td><%= civic.evidence_direction %></td>
+        <td><%= civic.evidence_level %></td>
+        <td><%= civic.clinical_significance %></td>
+        <td><%= civic.evidence_statement %></td>
+        <td><%= civic.pubmed_id %></td>
+        <td><%= civic.citation %></td>
+        <td><%= civic.nct_ids %></td>
+        <td><%= civic.rating %></td>
+        <td><%= civic.evidence_status %></td>
+        <td><%= civic.evidence_id %></td>
+        <td><%= civic.variant_id %></td>
+        <td><%= civic.gene_id %></td>
+        <td><%= civic.chromosome %></td>
+        <td><%= civic.start_position %></td>
+        <td><%= civic.stop_position %></td>
+        <td><%= civic.reference_bases %></td>
+        <td><%= civic.variant_bases %></td>
+        <td><%= civic.representative_transcript %></td>
+        <td><%= civic.chromosome2 %></td>
+        <td><%= civic.start_position2 %></td>
+        <td><%= civic.stop_position2 %></td>
+        <td><%= civic.representative_transcript2 %></td>
+        <td><%= civic.ensembl_version %></td>
+        <td><%= civic.reference_build %></td>
+        <td><%= civic.variant_summary %></td>
+        <td><%= civic.variant_origin %></td>
+        <td><%= civic.last_review_date %></td>
+        <td><%= civic.evidence_civic_url %></td>
+        <td><%= civic.variant_civic_url %></td>
+        <td><%= civic.gene_civic_url %></td>
+        <td><%= civic.drug_bank_name %></td>
+        <td><%= civic.drug_bank_id %></td>
+        <td><%= civic.icd_10_codes %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Civic', new_civic_path %>

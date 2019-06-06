@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mycanergenomes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Biomarker</th>
+      <th>Patient percent</th>
+      <th>Low level</th>
+      <th>High level</th>
+      <th>Treatment protein</th>
+      <th>Drugs</th>
+      <th>Orgin cancer</th>
+      <th>Second cancer</th>
+      <th>Data original</th>
+      <th>Num ref</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mycanergenomes.each do |mycanergenome| %>
+      <tr>
+        <td><%= mycanergenome.biomarker %></td>
+        <td><%= mycanergenome.patient_percent %></td>
+        <td><%= mycanergenome.low_level %></td>
+        <td><%= mycanergenome.high_level %></td>
+        <td><%= mycanergenome.treatment_protein %></td>
+        <td><%= mycanergenome.drugs %></td>
+        <td><%= mycanergenome.orgin_cancer %></td>
+        <td><%= mycanergenome.second_cancer %></td>
+        <td><%= mycanergenome.data_original %></td>
+        <td><%= mycanergenome.num_ref %></td>
+        <td><%= link_to 'Show', mycanergenome %></td>
+        <td><%= link_to 'Edit', edit_mycanergenome_path(mycanergenome) %></td>
+        <td><%= link_to 'Destroy', mycanergenome, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mycanergenome', new_mycanergenome_path %>

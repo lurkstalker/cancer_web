@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gene_symbol: MyString
+  gene_hgnc: one
+  entrez_gene: one
+  ref_seq_accession: MyString
+  tumor_types: MyString
+  tissue_types: MyString
+  variants: MyString
+  tier: 1
+  intepretations: MyString
+
+two:
+  gene_symbol: MyString
+  gene_hgnc: two
+  entrez_gene: two
+  ref_seq_accession: MyString
+  tumor_types: MyString
+  tissue_types: MyString
+  variants: MyString
+  tier: 1
+  intepretations: MyString

@@ -1,0 +1,21 @@
+
+<%= simple_form_for(@pmkb) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :gene_symbol %>
+    <%= f.association :gene_hgnc %>
+    <%= f.association :entrez_gene %>
+    <%= f.input :ref_seq_accession %>
+    <%= f.input :tumor_types %>
+    <%= f.input :tissue_types %>
+    <%= f.input :variants %>
+    <%= f.input :tier %>
+    <%= f.input :intepretations %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

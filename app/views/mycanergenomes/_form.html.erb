@@ -1,0 +1,22 @@
+
+<%= simple_form_for(@mycanergenome) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :biomarker %>
+    <%= f.input :patient_percent %>
+    <%= f.input :low_level %>
+    <%= f.input :high_level %>
+    <%= f.input :treatment_protein %>
+    <%= f.input :drugs %>
+    <%= f.input :orgin_cancer %>
+    <%= f.input :second_cancer %>
+    <%= f.input :data_original %>
+    <%= f.input :num_ref %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

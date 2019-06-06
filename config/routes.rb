@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :pmkbs
+  resources :mycanergenomes
+  resources :civics
   resources :dgidbs
   resources :can_sar_cancer_gene_censuses
   resources :oncokbs
@@ -9,6 +12,10 @@ Rails.application.routes.draw do
   root 'oncokbs#index'
   get  'oncokb/index', to: 'oncokbs#index'
   get  'dgidb/index', to: 'dgidbs#index'
+  get  'civic/index', to: 'civics#index'
+  get  'pmkb/index', to: 'pmkbs#index'
+  get  'mycanergenome/index', to: 'mycanergenomes#index'
+  get  '/index', to: 'can_sar_cancer_gene_censuses#index'
   get  '/help',    to: 'home_pages#help'
   get  '/home',   to: 'home_pages#home'
 end

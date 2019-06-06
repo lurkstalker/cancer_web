@@ -1,0 +1,57 @@
+
+<%= simple_form_for(@civic) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :gene_symbol_copy %>
+    <%= f.input :gene_symbol %>
+    <%= f.association :gene_hgnc %>
+    <%= f.association :ensembl_gene %>
+    <%= f.input :ref_seq_accession %>
+    <%= f.association :entrez_gene %>
+    <%= f.input :variants %>
+    <%= f.input :disease %>
+    <%= f.association :do %>
+    <%= f.input :phenotypes %>
+    <%= f.input :drugs %>
+    <%= f.input :evidence_type %>
+    <%= f.input :evidence_direction %>
+    <%= f.input :evidence_level %>
+    <%= f.input :clinical_significance %>
+    <%= f.input :evidence_statement %>
+    <%= f.association :pubmed %>
+    <%= f.input :citation %>
+    <%= f.input :nct_ids %>
+    <%= f.input :rating %>
+    <%= f.input :evidence_status %>
+    <%= f.association :evidence %>
+    <%= f.association :variant %>
+    <%= f.association :gene %>
+    <%= f.input :chromosome %>
+    <%= f.input :start_position %>
+    <%= f.input :stop_position %>
+    <%= f.input :reference_bases %>
+    <%= f.input :variant_bases %>
+    <%= f.input :representative_transcript %>
+    <%= f.input :chromosome2 %>
+    <%= f.input :start_position2 %>
+    <%= f.input :stop_position2 %>
+    <%= f.input :representative_transcript2 %>
+    <%= f.input :ensembl_version %>
+    <%= f.input :reference_build %>
+    <%= f.input :variant_summary %>
+    <%= f.input :variant_origin %>
+    <%= f.input :last_review_date %>
+    <%= f.input :evidence_civic_url %>
+    <%= f.input :variant_civic_url %>
+    <%= f.input :gene_civic_url %>
+    <%= f.input :drug_bank_name %>
+    <%= f.association :drug_bank %>
+    <%= f.input :icd_10_codes %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Biomarker:</strong>
+  <%= @mycanergenome.biomarker %>
+</p>
+
+<p>
+  <strong>Patient percent:</strong>
+  <%= @mycanergenome.patient_percent %>
+</p>
+
+<p>
+  <strong>Low level:</strong>
+  <%= @mycanergenome.low_level %>
+</p>
+
+<p>
+  <strong>High level:</strong>
+  <%= @mycanergenome.high_level %>
+</p>
+
+<p>
+  <strong>Treatment protein:</strong>
+  <%= @mycanergenome.treatment_protein %>
+</p>
+
+<p>
+  <strong>Drugs:</strong>
+  <%= @mycanergenome.drugs %>
+</p>
+
+<p>
+  <strong>Orgin cancer:</strong>
+  <%= @mycanergenome.orgin_cancer %>
+</p>
+
+<p>
+  <strong>Second cancer:</strong>
+  <%= @mycanergenome.second_cancer %>
+</p>
+
+<p>
+  <strong>Data original:</strong>
+  <%= @mycanergenome.data_original %>
+</p>
+
+<p>
+  <strong>Num ref:</strong>
+  <%= @mycanergenome.num_ref %>
+</p>
+
+<%= link_to 'Edit', edit_mycanergenome_path(@mycanergenome) %> |
+<%= link_to 'Back', mycanergenomes_path %>
