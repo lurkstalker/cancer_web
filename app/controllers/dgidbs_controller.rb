@@ -5,6 +5,11 @@ class DgidbsController < ApplicationController
   # GET /dgidbs.json
   def index
     @dgidbs = Dgidb.limit(100)
+    @search = params["search"]
+    if @search.present?
+      @name = @search["name"]
+      @dgidbs  = Dgidb.where(gene_name: @name)
+    end
   end
 
   # GET /dgidbs/1

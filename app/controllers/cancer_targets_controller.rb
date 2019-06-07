@@ -5,6 +5,11 @@ class CancerTargetsController < ApplicationController
   # GET /cancer_targets.json
   def index
     @cancer_targets = CancerTarget.all
+    @search = params["search"]
+    if @search.present?
+      @name = @search["name"]
+      @cancer_targets  = CancerTarget.where(gene_name: @name)
+    end
   end
 
   # GET /cancer_targets/1

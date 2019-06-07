@@ -1,5 +1,4 @@
 <p id="notice"><%= notice %></p>
-#app/views/cocktails/index.html.erb
 <%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline' } do |f| %>
   <%= f.input :name, input_html: {value: ""} %>
   <%= f.submit "Search", class: "btn btn-primary" %>

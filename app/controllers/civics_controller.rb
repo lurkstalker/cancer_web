@@ -5,6 +5,11 @@ class CivicsController < ApplicationController
   # GET /civics.json
   def index
     @civics = Civic.all
+    @search = params["search"]
+    if @search.present?
+      @name = @search["name"]
+      @civics  = Civic.where(gene_symbol: @name)
+    end
   end
 
   # GET /civics/1

@@ -5,6 +5,11 @@ class MycanergenomesController < ApplicationController
   # GET /mycanergenomes.json
   def index
     @mycanergenomes = Mycanergenome.all
+    @search = params["search"]
+    if @search.present?
+      @name = @search["name"]
+      @mycanergenomes  =  Mycanergenome.where(orgin_cancer: @name)
+    end
   end
 
   # GET /mycanergenomes/1

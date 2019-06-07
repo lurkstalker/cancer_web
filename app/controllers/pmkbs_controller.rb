@@ -5,6 +5,11 @@ class PmkbsController < ApplicationController
   # GET /pmkbs.json
   def index
     @pmkbs = Pmkb.all
+    @search = params["search"]
+    if @search.present?
+      @name = @search["name"]
+      @pmkbs  =  Pmkb.where(gene_symbol: @name)
+    end
   end
 
   # GET /pmkbs/1

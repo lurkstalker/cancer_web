@@ -5,6 +5,11 @@ class GdkdsController < ApplicationController
   # GET /gdkds.json
   def index
     @gdkds = Gdkd.all
+    @search = params["search"]
+    if @search.present?
+      @name = @search["name"]
+      @gdkds   =Gdkd.where(Gene: @name)
+    end
   end
 
   # GET /gdkds/1
