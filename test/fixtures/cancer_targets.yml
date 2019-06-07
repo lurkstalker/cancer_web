@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gene_symbol: MyString
+  gene_name: MyString
+  entrez_gene_Id: 1
+  genome_location: MyString
+  tier: 1
+  hallmark: MyString
+  chr_band: MyString
+  somatic: MyString
+  gemline: MyString
+  tumor_types_somatic: MyString
+  tumor_types_germline: MyString
+  cancer_syndrome: MyString
+  tissue_types: MyString
+  molecular_genetics: MyString
+  role_in_cancer: MyString
+  mutation_types: MyString
+  translocation_partner: MyString
+  other_germline_mut: MyString
+  other_syndrome: MyString
+  synonyms: MyString
+
+two:
+  gene_symbol: MyString
+  gene_name: MyString
+  entrez_gene_Id: 1
+  genome_location: MyString
+  tier: 1
+  hallmark: MyString
+  chr_band: MyString
+  somatic: MyString
+  gemline: MyString
+  tumor_types_somatic: MyString
+  tumor_types_germline: MyString
+  cancer_syndrome: MyString
+  tissue_types: MyString
+  molecular_genetics: MyString
+  role_in_cancer: MyString
+  mutation_types: MyString
+  translocation_partner: MyString
+  other_germline_mut: MyString
+  other_syndrome: MyString
+  synonyms: MyString

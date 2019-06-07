@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cancer Targets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene symbol</th>
+      <th>Gene name</th>
+      <th>Entrez gene id</th>
+      <th>Genome location</th>
+      <th>Tier</th>
+      <th>Hallmark</th>
+      <th>Chr band</th>
+      <th>Somatic</th>
+      <th>Gemline</th>
+      <th>Tumor types somatic</th>
+      <th>Tumor types germline</th>
+      <th>Cancer syndrome</th>
+      <th>Tissue types</th>
+      <th>Molecular genetics</th>
+      <th>Role in cancer</th>
+      <th>Mutation types</th>
+      <th>Translocation partner</th>
+      <th>Other germline mut</th>
+      <th>Other syndrome</th>
+      <th>Synonyms</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cancer_targets.each do |cancer_target| %>
+      <tr>
+        <td><%= cancer_target.gene_symbol %></td>
+        <td><%= cancer_target.gene_name %></td>
+        <td><%= cancer_target.entrez_gene_Id %></td>
+        <td><%= cancer_target.genome_location %></td>
+        <td><%= cancer_target.tier %></td>
+        <td><%= cancer_target.hallmark %></td>
+        <td><%= cancer_target.chr_band %></td>
+        <td><%= cancer_target.somatic %></td>
+        <td><%= cancer_target.gemline %></td>
+        <td><%= cancer_target.tumor_types_somatic %></td>
+        <td><%= cancer_target.tumor_types_germline %></td>
+        <td><%= cancer_target.cancer_syndrome %></td>
+        <td><%= cancer_target.tissue_types %></td>
+        <td><%= cancer_target.molecular_genetics %></td>
+        <td><%= cancer_target.role_in_cancer %></td>
+        <td><%= cancer_target.mutation_types %></td>
+        <td><%= cancer_target.translocation_partner %></td>
+        <td><%= cancer_target.other_germline_mut %></td>
+        <td><%= cancer_target.other_syndrome %></td>
+        <td><%= cancer_target.synonyms %></td>
+<!--        <td><%#= link_to 'Show', cancer_target %></td>-->
+<!--        <td><%#= link_to 'Edit', edit_cancer_target_path(cancer_target) %></td>-->
+<!--        <td><%#= link_to 'Destroy', cancer_target, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cancer Target', new_cancer_target_path %>

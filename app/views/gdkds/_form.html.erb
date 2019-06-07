@@ -1,0 +1,72 @@
+
+<%= simple_form_for(@gdkd) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :id %>
+    <%= f.input :Disease %>
+    <%= f.input :icd10 %>
+    <%= f.input :Gene %>
+    <%= f.association :hgnc %>
+    <%= f.association :ensembl_gene %>
+    <%= f.input :refseq_accession %>
+    <%= f.input :Variant %>
+    <%= f.input :Description %>
+    <%= f.input :Effect %>
+    <%= f.input :Pathway %>
+    <%= f.input :Association1 %>
+    <%= f.input :TherapeuticContext1 %>
+    <%= f.input :Status1 %>
+    <%= f.input :Evidence1 %>
+    <%= f.input :PMID1 %>
+    <%= f.input :Association2 %>
+    <%= f.input :TherapeuticContext2 %>
+    <%= f.input :Status2 %>
+    <%= f.input :Evidence2 %>
+    <%= f.input :PMID2 %>
+    <%= f.input :Association3 %>
+    <%= f.input :TherapeuticContext3 %>
+    <%= f.input :Status3 %>
+    <%= f.input :Evidence3 %>
+    <%= f.input :PMID3 %>
+    <%= f.input :Association4 %>
+    <%= f.input :TherapeuticContext4 %>
+    <%= f.input :Status4 %>
+    <%= f.input :Evidence4 %>
+    <%= f.input :PMID4 %>
+    <%= f.input :Association5 %>
+    <%= f.input :TherapeuticContext5 %>
+    <%= f.input :Status5 %>
+    <%= f.input :Evidence5 %>
+    <%= f.input :PMID5 %>
+    <%= f.input :Association6 %>
+    <%= f.input :TherapeuticContext6 %>
+    <%= f.input :Status6 %>
+    <%= f.input :Evidence6 %>
+    <%= f.input :PMID6 %>
+    <%= f.input :Association7 %>
+    <%= f.input :TherapeuticContext7 %>
+    <%= f.input :Status7 %>
+    <%= f.input :Evidence7 %>
+    <%= f.input :PMID7 %>
+    <%= f.input :Association8 %>
+    <%= f.input :TherapeuticContext8 %>
+    <%= f.input :Status8 %>
+    <%= f.input :Evidence8 %>
+    <%= f.input :PMID8 %>
+    <%= f.input :Prognostic %>
+    <%= f.input :PMID9 %>
+    <%= f.input :Diagnostic %>
+    <%= f.input :PMID10 %>
+    <%= f.input :BiologicalRelevancePMID %>
+    <%= f.input :DrugBankName1 %>
+    <%= f.input :DrugBankID1 %>
+    <%= f.input :DrugBankName2 %>
+    <%= f.input :DrugBankID2 %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

@@ -1,0 +1,104 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gene symbol:</strong>
+  <%= @cancer_target.gene_symbol %>
+</p>
+
+<p>
+  <strong>Gene name:</strong>
+  <%= @cancer_target.gene_name %>
+</p>
+
+<p>
+  <strong>Entrez gene id:</strong>
+  <%= @cancer_target.entrez_gene_Id %>
+</p>
+
+<p>
+  <strong>Genome location:</strong>
+  <%= @cancer_target.genome_location %>
+</p>
+
+<p>
+  <strong>Tier:</strong>
+  <%= @cancer_target.tier %>
+</p>
+
+<p>
+  <strong>Hallmark:</strong>
+  <%= @cancer_target.hallmark %>
+</p>
+
+<p>
+  <strong>Chr band:</strong>
+  <%= @cancer_target.chr_band %>
+</p>
+
+<p>
+  <strong>Somatic:</strong>
+  <%= @cancer_target.somatic %>
+</p>
+
+<p>
+  <strong>Gemline:</strong>
+  <%= @cancer_target.gemline %>
+</p>
+
+<p>
+  <strong>Tumor types somatic:</strong>
+  <%= @cancer_target.tumor_types_somatic %>
+</p>
+
+<p>
+  <strong>Tumor types germline:</strong>
+  <%= @cancer_target.tumor_types_germline %>
+</p>
+
+<p>
+  <strong>Cancer syndrome:</strong>
+  <%= @cancer_target.cancer_syndrome %>
+</p>
+
+<p>
+  <strong>Tissue types:</strong>
+  <%= @cancer_target.tissue_types %>
+</p>
+
+<p>
+  <strong>Molecular genetics:</strong>
+  <%= @cancer_target.molecular_genetics %>
+</p>
+
+<p>
+  <strong>Role in cancer:</strong>
+  <%= @cancer_target.role_in_cancer %>
+</p>
+
+<p>
+  <strong>Mutation types:</strong>
+  <%= @cancer_target.mutation_types %>
+</p>
+
+<p>
+  <strong>Translocation partner:</strong>
+  <%= @cancer_target.translocation_partner %>
+</p>
+
+<p>
+  <strong>Other germline mut:</strong>
+  <%= @cancer_target.other_germline_mut %>
+</p>
+
+<p>
+  <strong>Other syndrome:</strong>
+  <%= @cancer_target.other_syndrome %>
+</p>
+
+<p>
+  <strong>Synonyms:</strong>
+  <%= @cancer_target.synonyms %>
+</p>
+
+<%= link_to 'Edit', edit_cancer_target_path(@cancer_target) %> |
+<%= link_to 'Back', cancer_targets_path %>

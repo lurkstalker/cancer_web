@@ -1,0 +1,2 @@
+module GdkdsHelper
+end

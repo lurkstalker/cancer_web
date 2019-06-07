@@ -1,0 +1,2 @@
+json.extract! cancer_target, :id, :gene_symbol, :gene_name, :entrez_gene_Id, :genome_location, :tier, :hallmark, :chr_band, :somatic, :gemline, :tumor_types_somatic, :tumor_types_germline, :cancer_syndrome, :tissue_types, :molecular_genetics, :role_in_cancer, :mutation_types, :translocation_partner, :other_germline_mut, :other_syndrome, :synonyms, :created_at, :updated_at
+json.url cancer_target_url(cancer_target, format: :json)

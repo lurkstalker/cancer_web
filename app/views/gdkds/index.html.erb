@@ -1,0 +1,145 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Gdkds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Disease</th>
+      <th>Icd10</th>
+      <th>Gene</th>
+      <th>Hgnc</th>
+      <th>Ensembl gene</th>
+      <th>Refseq accession</th>
+      <th>Variant</th>
+      <th>Description</th>
+      <th>Effect</th>
+      <th>Pathway</th>
+      <th>Association1</th>
+      <th>Therapeuticcontext1</th>
+      <th>Status1</th>
+      <th>Evidence1</th>
+      <th>Pmid1</th>
+      <th>Association2</th>
+      <th>Therapeuticcontext2</th>
+      <th>Status2</th>
+      <th>Evidence2</th>
+      <th>Pmid2</th>
+      <th>Association3</th>
+      <th>Therapeuticcontext3</th>
+      <th>Status3</th>
+      <th>Evidence3</th>
+      <th>Pmid3</th>
+      <th>Association4</th>
+      <th>Therapeuticcontext4</th>
+      <th>Status4</th>
+      <th>Evidence4</th>
+      <th>Pmid4</th>
+      <th>Association5</th>
+      <th>Therapeuticcontext5</th>
+      <th>Status5</th>
+      <th>Evidence5</th>
+      <th>Pmid5</th>
+      <th>Association6</th>
+      <th>Therapeuticcontext6</th>
+      <th>Status6</th>
+      <th>Evidence6</th>
+      <th>Pmid6</th>
+      <th>Association7</th>
+      <th>Therapeuticcontext7</th>
+      <th>Status7</th>
+      <th>Evidence7</th>
+      <th>Pmid7</th>
+      <th>Association8</th>
+      <th>Therapeuticcontext8</th>
+      <th>Status8</th>
+      <th>Evidence8</th>
+      <th>Pmid8</th>
+      <th>Prognostic</th>
+      <th>Pmid9</th>
+      <th>Diagnostic</th>
+      <th>Pmid10</th>
+      <th>Biologicalrelevancepmid</th>
+      <th>Drugbankname1</th>
+      <th>Drugbankid1</th>
+      <th>Drugbankname2</th>
+      <th>Drugbankid2</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gdkds.each do |gdkd| %>
+      <tr>
+        <td><%= gdkd.id %></td>
+        <td><%= gdkd.Disease %></td>
+        <td><%= gdkd.icd10 %></td>
+        <td><%= gdkd.Gene %></td>
+        <td><%= gdkd.hgnc_id %></td>
+        <td><%= gdkd.ensembl_gene_id %></td>
+        <td><%= gdkd.refseq_accession %></td>
+        <td><%= gdkd.Variant %></td>
+        <td><%= gdkd.Description %></td>
+        <td><%= gdkd.Effect %></td>
+        <td><%= gdkd.Pathway %></td>
+        <td><%= gdkd.Association1 %></td>
+        <td><%= gdkd.TherapeuticContext1 %></td>
+        <td><%= gdkd.Status1 %></td>
+        <td><%= gdkd.Evidence1 %></td>
+        <td><%= gdkd.PMID1 %></td>
+        <td><%= gdkd.Association2 %></td>
+        <td><%= gdkd.TherapeuticContext2 %></td>
+        <td><%= gdkd.Status2 %></td>
+        <td><%= gdkd.Evidence2 %></td>
+        <td><%= gdkd.PMID2 %></td>
+        <td><%= gdkd.Association3 %></td>
+        <td><%= gdkd.TherapeuticContext3 %></td>
+        <td><%= gdkd.Status3 %></td>
+        <td><%= gdkd.Evidence3 %></td>
+        <td><%= gdkd.PMID3 %></td>
+        <td><%= gdkd.Association4 %></td>
+        <td><%= gdkd.TherapeuticContext4 %></td>
+        <td><%= gdkd.Status4 %></td>
+        <td><%= gdkd.Evidence4 %></td>
+        <td><%= gdkd.PMID4 %></td>
+        <td><%= gdkd.Association5 %></td>
+        <td><%= gdkd.TherapeuticContext5 %></td>
+        <td><%= gdkd.Status5 %></td>
+        <td><%= gdkd.Evidence5 %></td>
+        <td><%= gdkd.PMID5 %></td>
+        <td><%= gdkd.Association6 %></td>
+        <td><%= gdkd.TherapeuticContext6 %></td>
+        <td><%= gdkd.Status6 %></td>
+        <td><%= gdkd.Evidence6 %></td>
+        <td><%= gdkd.PMID6 %></td>
+        <td><%= gdkd.Association7 %></td>
+        <td><%= gdkd.TherapeuticContext7 %></td>
+        <td><%= gdkd.Status7 %></td>
+        <td><%= gdkd.Evidence7 %></td>
+        <td><%= gdkd.PMID7 %></td>
+        <td><%= gdkd.Association8 %></td>
+        <td><%= gdkd.TherapeuticContext8 %></td>
+        <td><%= gdkd.Status8 %></td>
+        <td><%= gdkd.Evidence8 %></td>
+        <td><%= gdkd.PMID8 %></td>
+        <td><%= gdkd.Prognostic %></td>
+        <td><%= gdkd.PMID9 %></td>
+        <td><%= gdkd.Diagnostic %></td>
+        <td><%= gdkd.PMID10 %></td>
+        <td><%= gdkd.BiologicalRelevancePMID %></td>
+        <td><%= gdkd.DrugBankName1 %></td>
+        <td><%= gdkd.DrugBankID1 %></td>
+        <td><%= gdkd.DrugBankName2 %></td>
+        <td><%= gdkd.DrugBankID2 %></td>
+        <td><%= link_to 'Show', gdkd %></td>
+        <td><%= link_to 'Edit', edit_gdkd_path(gdkd) %></td>
+        <td><%= link_to 'Destroy', gdkd, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gdkd', new_gdkd_path %>

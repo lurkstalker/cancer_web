@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_04_184917) do
+ActiveRecord::Schema.define(version: 2019_06_07_194518) do
 
-  create_table "canSAR_cancer_gene_censuses", id: false, force: :cascade do |t|
+  create_table "cancer_targets", id: false, force: :cascade do |t|
     t.string "gene_symbol", limit: 20, null: false
     t.string "gene_name", limit: 200, null: false
     t.integer "entrez_gene_Id", null: false
@@ -100,6 +100,69 @@ ActiveRecord::Schema.define(version: 2019_06_04_184917) do
     t.string "pubmed_id", limit: 850
     t.string "drug_bank_id", limit: 150
     t.string "drug_bank_name", limit: 150
+  end
+
+  create_table "gdkds", id: false, force: :cascade do |t|
+    t.integer "id"
+    t.string "Disease", limit: 100
+    t.string "icd10", limit: 40
+    t.string "Gene", limit: 40
+    t.string "hgnc_id", limit: 40
+    t.string "ensembl_gene_id", limit: 40
+    t.string "refseq_accession", limit: 40
+    t.string "Variant", limit: 200
+    t.string "Description", limit: 40
+    t.string "Effect", limit: 40
+    t.string "Pathway", limit: 40
+    t.string "Association1", limit: 40
+    t.string "TherapeuticContext1", limit: 200
+    t.string "Status1", limit: 40
+    t.string "Evidence1", limit: 40
+    t.string "PMID1", limit: 150
+    t.string "Association2", limit: 40
+    t.string "TherapeuticContext2", limit: 200
+    t.string "Status2", limit: 40
+    t.string "Evidence2", limit: 40
+    t.string "PMID2", limit: 100
+    t.string "Association3", limit: 40
+    t.string "TherapeuticContext3", limit: 200
+    t.string "Status3", limit: 40
+    t.string "Evidence3", limit: 40
+    t.string "PMID3", limit: 200
+    t.string "Association4", limit: 40
+    t.string "TherapeuticContext4", limit: 200
+    t.string "Status4", limit: 40
+    t.string "Evidence4", limit: 40
+    t.string "PMID4", limit: 100
+    t.string "Association5", limit: 40
+    t.string "TherapeuticContext5", limit: 200
+    t.string "Status5", limit: 40
+    t.string "Evidence5", limit: 40
+    t.string "PMID5", limit: 100
+    t.string "Association6", limit: 40
+    t.string "TherapeuticContext6", limit: 40
+    t.string "Status6", limit: 40
+    t.string "Evidence6", limit: 40
+    t.string "PMID6", limit: 100
+    t.string "Association7", limit: 40
+    t.string "TherapeuticContext7", limit: 40
+    t.string "Status7", limit: 40
+    t.string "Evidence7", limit: 40
+    t.string "PMID7", limit: 100
+    t.string "Association8", limit: 40
+    t.string "TherapeuticContext8", limit: 40
+    t.string "Status8", limit: 40
+    t.string "Evidence8", limit: 40
+    t.string "PMID8", limit: 100
+    t.string "Prognostic", limit: 200
+    t.string "PMID9", limit: 100
+    t.string "Diagnostic", limit: 100
+    t.string "PMID10", limit: 40
+    t.string "BiologicalRelevancePMID", limit: 100
+    t.string "DrugBankName1", limit: 200
+    t.string "DrugBankID1", limit: 100
+    t.string "DrugBankName2", limit: 200
+    t.string "DrugBankID2", limit: 40
   end
 
   create_table "mycanergenome_helper_results", primary_key: ["id", "num_ref"], force: :cascade do |t|

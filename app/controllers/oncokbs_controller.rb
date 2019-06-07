@@ -8,7 +8,7 @@ class OncokbsController < ApplicationController
     @search = params["search"]
     if @search.present?
       @name = @search["name"]
-      @oncokbs  = Oncokb.joins('INNER JOIN dgidbs ON oncokbs.gene_name = dgidbs.gene_name').where(gene_name: @name)
+      @oncokbs  = Oncokb.where(gene_name: @name)
     end
   end
 
